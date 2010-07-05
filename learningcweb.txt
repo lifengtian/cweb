@@ -1,0 +1,39 @@
+I saw special words like
+@     begining of section
+@*	begining of star * section
+@d	define
+@<	begining of a named section
+@>	end of a named section
+@c   beginning of an unamed section
+@p
+@s motion int @s action int
+@s not normal @q unreverse a C++ keyword @>
+
+@^
+@c@=
+@#
+@+
+@!
+@/
++=
+\
+||
+$c$
+
+a section of cweb doc include (must) 3 parts:
+first TeX part
+second macro definitions
+third  C
+
+section has to begin with @  or @*
+middle part begins with @d or @f
+C part begins with @c or @<section name@>=
+  it has a name specified by @<   @> you can use @<Clear...@> to refer
+  to the named section
+  The same section name can appear multiple places. 
+
+@d may be scattered around, but will be collected and defined at the
+beginning of the C program by ctangle
+C parts of unnamed sections are copied down in order of writing in
+cweb file; There should be at least one unnamed section, otherwise
+there will be no program.
