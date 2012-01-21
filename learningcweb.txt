@@ -1,29 +1,43 @@
-I saw special words like
+I saw special words (or control code) like
 @     begining of section
-@*	begining of star * section
+@*	begining of star * section -- a new page starts
 @d	define
 @<	begining of a named section
 @>	end of a named section
-@c   beginning of an unamed section
-@p
+@c  beginning of an unamed C section
+@p  beginning of 'program'
 @s motion int @s action int
 @s not normal @q unreverse a C++ keyword @>
-
+@( output to a new file
 @^
 @c@=
 @#
-@+
+@+  no newline
 @!
+
+
+8 for TeX readability only
+@;   
+@,
+@|
+@#
+@+
 @/
+@[  
+@]
+
+
+
+
 +=
 \
 ||
 $c$
 
-a section of cweb doc include (must) 3 parts:
-first TeX part
-second macro definitions
-third  C
+a section of cweb doc must include 3 parts:
+1. first  part: TeX part, explanation
+2. second part: macro definitions
+3. third  part: C, a piece of program.
 
 section has to begin with @  or @*
 middle part begins with @d or @f
@@ -37,3 +51,15 @@ beginning of the C program by ctangle
 C parts of unnamed sections are copied down in order of writing in
 cweb file; There should be at least one unnamed section, otherwise
 there will be no program.
+
+@ This is a subroutine
+
+@<Sub...@>=
+int score (void);
+
+
+
+
+URI
+
+http://mmix.cs.hm.edu/doc/cwebman.pdf
