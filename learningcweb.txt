@@ -1,5 +1,4 @@
 
-
 List of special words (or control code):
 @   begining of section
 @*	begining of star * section -- a new page starts
@@ -9,7 +8,7 @@ List of special words (or control code):
 @c  beginning of an unamed C section
 @p  beginning of 'program'
 @s  not normal @q unreverse a C++ keyword @>
-@(  output to a new file
+@(  output to a new file. e.g., @(gb_graph.h@>=
 @^
 @c@=
 @#
