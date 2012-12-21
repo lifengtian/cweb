@@ -1,5 +1,5 @@
 \datethis
-@* Introduction. BLAT is a program wrote by Jim Kent to do fast mRNA-DNA alignment. 
+@* Introduction. BLAT is a program wrote by Jim Kent to perform fast mRNA-DNA alignment. 
 k-mer (k from 6 to 18), or tileSize,  is the size of the index  used to index the genome. 
 The k-mer is converted to an integer first. It is optional for user to generate a file including
 all extremely high frequency tile, called ooc file. The file is encoded by a binary format
