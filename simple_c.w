@@ -4,6 +4,9 @@
 
 @c
 #include <stdio.h>
+/* install ctangle/cweave 
+ * http://www.tug.org/mactex/
+ */
 void main(void){
 	printf("Hello CWEB");
 }
