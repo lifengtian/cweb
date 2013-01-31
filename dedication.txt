@@ -1,0 +1,27 @@
+MIX
+
+360
+650
+709
+7070
+U3
+SS80
+1107
+1604
+G20
+B220
+S2000
+920
+601
+H800
+PDP-4
+II
+
+
+It is possible to write perfect, bug-free code. 
+I've seen it done, with no tool except a pencil. 
+The essential ingredient is a decision, 
+by the individual programmer, 
+to make the code perfect, 
+and not to release it until it is perfect.
+                         ---   Tom Van Vleck 
