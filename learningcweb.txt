@@ -1,4 +1,8 @@
 
+Often, you beat your brains out on a problem and then somebody says, "The answer's in Knuth." 
+--- http://www.multicians.org/thvv/swe-readings.html
+
+
 List of special words (or control code):
 @   begining of section
 @*	begining of star * section -- a new page starts
