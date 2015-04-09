@@ -50,12 +50,17 @@ $c$
 
 
 A section of cweb doc must include 3 parts:
-1. first  part: TeX part, explanation
-2. second part: macro definitions
-3. third  part: C, a piece of program.
+  1. first  part: TeX part, informal commentary
+  2. second part: macro definitions
+  3. third  part: C code
+and these parts always occur in the stated order. In practice, the individual parts are sometimes empty.
+
+A section is either named or unnamed. 
 
 A section has to begin with @  or @*
+
 middle part begins with @d or @f
+
 C part begins with @c or @<section name@>=
   it has a name specified by @<   @> you can use @<Clear...@> to refer
   to the named section
@@ -72,6 +77,19 @@ e.g.
 
 @<Sub...@>=
 int score (void);
+
+
+Cweave will produce a human friendly typographically formatted typeset document such that
+raw C code becomes easier to read. For example, program structure is shown by indentation.
+
+Sometimes the name of a section is a file name in typewriter type, such as <gb_save.h 1>.
+This means that the replacement text for that section is output to the named file instead of being part
+of the tangled C code. A single program document can therefore describe several related files.
+
+
+
+
+
 
 
 __END__
