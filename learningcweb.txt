@@ -2,6 +2,19 @@
 Often, you beat your brains out on a problem and then somebody says, "The answer's in Knuth." 
 --- http://www.multicians.org/thvv/swe-readings.html
 
+A CWEB program is a C program that has been cut up into pieces and rearranged into an order that is easier for a human being to understand.
+A C program is a CWEB program that has been rearranged into an order that is easier for a computer to understand. 
+--- Stanford GraphBase
+
+"You should be able to understand a C program better when you see it in its CWEB form, if the 
+author of the CWEB form has chosen a good order of presentation. "
+
+Tangle
+  ctangle transform the CWEB program to a ordinary C program
+  
+Weave
+  cweave convert the CWEB program to human readable document
+  
 
 List of special words (or control code):
 @   begining of section
